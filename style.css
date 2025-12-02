@@ -7,7 +7,7 @@
   --accent-soft: rgba(212, 22, 43, 0.3);
   --accent-soft-strong: rgba(212, 22, 43, 0.55);
   --text: #f4f1f3;
-  --muted: #9d9399;
+  --muted: #b3a9b0; /* slightly brighter for readability */
   --border-subtle: rgba(255, 255, 255, 0.08);
   --radius-lg: 22px;
   --radius-pill: 999px;
@@ -97,7 +97,7 @@ section[id] {
   font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.28em; /* refined spacing */
   color: var(--text);
   position: relative;
   padding-left: 0.35em;
@@ -314,7 +314,7 @@ section[id] {
 }
 
 .panel-section:nth-of-type(even) {
-  background: radial-gradient(circle at top, #09070d 0%, #040307 50%, #020104 100%);
+  background: radial-gradient(circle at top, #0b0507 0%, #040307 50%, #020104 100%);
 }
 
 /* Glass card */
@@ -421,6 +421,22 @@ section[id] {
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+/* "Coming soon" badge */
+
+.badge-soon {
+  display: inline-block;
+  margin-top: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(212, 22, 43, 0.3);
+  color: var(--muted);
 }
 
 /* Contact */
